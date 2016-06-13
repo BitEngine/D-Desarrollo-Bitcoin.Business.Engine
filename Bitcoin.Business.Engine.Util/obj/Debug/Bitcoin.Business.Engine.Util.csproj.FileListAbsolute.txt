@@ -1,0 +1,7 @@
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\bin\Debug\Bitcoin.Business.Engine.Util.dll
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\bin\Debug\Bitcoin.Business.Engine.Util.pdb
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.BusinessMessages.BettingMessages.resources
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.TransformerMessages.TransformerMessages.resources
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.csproj.GenerateResource.Cache
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.dll
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.pdb

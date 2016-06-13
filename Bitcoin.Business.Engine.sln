@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine", "Bitcoin.Business.Engine\Bitcoin.Business.Engine.csproj", "{938C151F-662E-466E-8E17-2580CED6987D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.Manager", "Bitcoin.Business.Engine.Manager\Bitcoin.Business.Engine.Manager.csproj", "{8EDADB86-034E-4A52-8391-4A3108DF8C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.DataManager", "Bitcoin.Business.Engine.DataManager\Bitcoin.Business.Engine.DataManager.csproj", "{62E3ACD6-A50A-4D37-A257-53CF5875884F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.Transformer", "Bitcoin.Business.Engine.Transformer\Bitcoin.Business.Engine.Transformer.csproj", "{53298E05-E344-4F54-A8B8-7A96B0221EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.BO", "Bitcoin.Business.Engine.BO\Bitcoin.Business.Engine.BO.csproj", "{8F03E4A1-BF04-41FE-88DA-D2FEF72A5E3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.PersistentObjects", "Bitcoin.Business.Engine.PersistentObjects\Bitcoin.Business.Engine.PersistentObjects.csproj", "{7812EDD4-8260-4C4F-A85C-160E4C08BD5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.Util", "Bitcoin.Business.Engine.Util\Bitcoin.Business.Engine.Util.csproj", "{4079B295-0688-458A-BF79-8A627F9D0D12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{938C151F-662E-466E-8E17-2580CED6987D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938C151F-662E-466E-8E17-2580CED6987D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938C151F-662E-466E-8E17-2580CED6987D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938C151F-662E-466E-8E17-2580CED6987D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDADB86-034E-4A52-8391-4A3108DF8C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDADB86-034E-4A52-8391-4A3108DF8C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDADB86-034E-4A52-8391-4A3108DF8C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDADB86-034E-4A52-8391-4A3108DF8C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E3ACD6-A50A-4D37-A257-53CF5875884F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E3ACD6-A50A-4D37-A257-53CF5875884F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E3ACD6-A50A-4D37-A257-53CF5875884F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E3ACD6-A50A-4D37-A257-53CF5875884F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53298E05-E344-4F54-A8B8-7A96B0221EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53298E05-E344-4F54-A8B8-7A96B0221EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53298E05-E344-4F54-A8B8-7A96B0221EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53298E05-E344-4F54-A8B8-7A96B0221EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F03E4A1-BF04-41FE-88DA-D2FEF72A5E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F03E4A1-BF04-41FE-88DA-D2FEF72A5E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F03E4A1-BF04-41FE-88DA-D2FEF72A5E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F03E4A1-BF04-41FE-88DA-D2FEF72A5E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7812EDD4-8260-4C4F-A85C-160E4C08BD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7812EDD4-8260-4C4F-A85C-160E4C08BD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7812EDD4-8260-4C4F-A85C-160E4C08BD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7812EDD4-8260-4C4F-A85C-160E4C08BD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4079B295-0688-458A-BF79-8A627F9D0D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4079B295-0688-458A-BF79-8A627F9D0D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4079B295-0688-458A-BF79-8A627F9D0D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4079B295-0688-458A-BF79-8A627F9D0D12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

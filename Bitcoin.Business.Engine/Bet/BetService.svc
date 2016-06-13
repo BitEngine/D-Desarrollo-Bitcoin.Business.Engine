@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Bitcoin.Business.Engine.Bet.BetService" CodeBehind="BetService.svc.cs" %>

@@ -1,0 +1,9 @@
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\obj\Debug\Bitcoin.Business.Engine.Transformer.csprojResolveAssemblyReference.cache
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\bin\Debug\Bitcoin.Business.Engine.Transformer.dll
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\bin\Debug\Bitcoin.Business.Engine.Transformer.pdb
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\bin\Debug\AutoMapper.dll
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\bin\Debug\AutoMapper.Net4.dll
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\bin\Debug\Bitcoin.Business.Engine.Util.dll
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\bin\Debug\Bitcoin.Business.Engine.Util.pdb
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\obj\Debug\Bitcoin.Business.Engine.Transformer.dll
+E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Transformer\obj\Debug\Bitcoin.Business.Engine.Transformer.pdb
