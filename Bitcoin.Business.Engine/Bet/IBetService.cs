@@ -13,5 +13,6 @@ namespace Bitcoin.Business.Engine.Bet
     {
         [OperationContract]
         void DoWork();
+
     }
 }
