@@ -61,11 +61,11 @@ namespace Bitcoin.Business.Engine.Util.TransformerMessages {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a .
+        ///   Busca una cadena traducida similar a El transformador no se encuentra registrado en la fábrica de transformación. Clase {0}.
         /// </summary>
-        public static string TrasnformationError {
+        public static string FactoryTrasnformationError {
             get {
-                return ResourceManager.GetString("TrasnformationError", resourceCulture);
+                return ResourceManager.GetString("FactoryTrasnformationError", resourceCulture);
             }
         }
     }

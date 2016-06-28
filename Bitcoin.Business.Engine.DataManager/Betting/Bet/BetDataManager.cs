@@ -7,5 +7,8 @@ namespace Bitcoin.Business.Engine.DataManager.Betting
 {
     public class BetDataManager
     {
+        #region Public Methods
+        
+        #endregion
     }
 }

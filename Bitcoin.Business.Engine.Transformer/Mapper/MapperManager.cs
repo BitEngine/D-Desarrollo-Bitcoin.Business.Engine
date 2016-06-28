@@ -2,28 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Reflection;
 using AutoMapper;
-using Bitcoin.Business.Engine.Util.TransformerMessages;
+using System.Reflection;
 using DevExpress.Xpo;
+using Bitcoin.Business.Engine.Util.TransformerMessages;
 
 namespace Bitcoin.Business.Engine.Transformer.Mapper
 {
-    public abstract class MapperManager<Persistent, BusinessObjects> : IMapperManager<Persistent, BusinessObjects>
+    public class MapperManager<Persistent, BusinessObject> : IMapperManager<Persistent, BusinessObject>
     {
         #region Public Methods
-        public virtual void AdditionalSettings(IMappingExpression<Persistent, BusinessObjects> map, BusinessObjects destination)
+        public virtual void AdditionalSettings(IMappingExpression<Persistent, BusinessObject> map, BusinessObject destination)
         {
 
         }
 
         #region Transform Persistent to BusinessObjects
-        public virtual BusinessObjects MapperPersistent2BO(Persistent oObject)
+        public virtual BusinessObject MapperPersistent2BO(Persistent oObject)
         {
             try
             {
-                Type t = typeof(BusinessObjects);
-                var map = AutoMapper.Mapper.CreateMap<Persistent, BusinessObjects>();
+                Type t = typeof(BusinessObject);
+                var map = AutoMapper.Mapper.CreateMap<Persistent, BusinessObject>();
                 foreach (PropertyInfo prop in t.GetProperties())
                 {
                     bool isPrimitive = IsPrimitive(prop.PropertyType);
@@ -34,7 +34,7 @@ namespace Bitcoin.Business.Engine.Transformer.Mapper
                         map.ForMember(prop.Name, opt => opt.Ignore());
                     }
                 }
-                BusinessObjects destination = (BusinessObjects)Activator.CreateInstance<BusinessObjects>();
+                BusinessObject destination = (BusinessObject)Activator.CreateInstance<BusinessObject>();
                 AdditionalSettings(map, destination);
                 var customerViewItem = AutoMapper.Mapper.Map(oObject, destination);
                 return customerViewItem;
@@ -45,12 +45,12 @@ namespace Bitcoin.Business.Engine.Transformer.Mapper
             }
         }
 
-        public virtual BusinessObjectsX MapperPersistent2BO<PersitentX, BusinessObjectsX>(PersitentX oObject)
+        public virtual BusinessObjectX MapperPersistent2BO<PersitentX, BusinessObjectX>(PersitentX oObject)
         {
             try
             {
-                Type t = typeof(BusinessObjectsX);
-                var map = AutoMapper.Mapper.CreateMap<PersitentX, BusinessObjectsX>();
+                Type t = typeof(BusinessObjectX);
+                var map = AutoMapper.Mapper.CreateMap<PersitentX, BusinessObjectX>();
                 foreach (PropertyInfo prop in t.GetProperties())
                 {
                     bool isPrimitive = IsPrimitive(prop.PropertyType);
@@ -61,7 +61,7 @@ namespace Bitcoin.Business.Engine.Transformer.Mapper
                         map.ForMember(prop.Name, opt => opt.Ignore());
                     }
                 }
-                BusinessObjectsX destination = (BusinessObjectsX)Activator.CreateInstance<BusinessObjectsX>();
+                BusinessObjectX destination = (BusinessObjectX)Activator.CreateInstance<BusinessObjectX>();
                 var customerViewItem = AutoMapper.Mapper.Map(oObject, destination);
                 return customerViewItem;
             }
@@ -73,12 +73,12 @@ namespace Bitcoin.Business.Engine.Transformer.Mapper
         #endregion
 
         #region Transform BusinessObjects to Persistent
-        public virtual Persistent MapperBO2Persistent(BusinessObjects oObject, UnitOfWork unit)
+        public virtual Persistent MapperBO2Persistent(BusinessObject oObject, UnitOfWork unit)
         {
             try
             {
                 Type t = typeof(Persistent);
-                var map = AutoMapper.Mapper.CreateMap<BusinessObjects, Persistent>();
+                var map = AutoMapper.Mapper.CreateMap<BusinessObject, Persistent>();
                 foreach (PropertyInfo prop in t.GetProperties())
                 {
                     bool isPrimitive = IsPrimitive(prop.PropertyType);
@@ -101,30 +101,30 @@ namespace Bitcoin.Business.Engine.Transformer.Mapper
             }
         }
 
-         public virtual void AdditionalSettings(IMappingExpression<BusinessObjects, Persistent> map, BusinessObjects objeto, UnitOfWork unit)
-         {
+        public virtual void AdditionalSettings(IMappingExpression<BusinessObject, Persistent> map, BusinessObject objeto, UnitOfWork unit)
+        {
 
 
-         }
+        }
 
-         protected void AdditionalSettings<PersistentX, BusinessObjectsX>(IMappingExpression<BusinessObjectsX, PersistentX> map, object objeto, UnitOfWork unit)
-         {
-             Type persistent = typeof(PersistentX);
-             Type business = typeof(BusinessObjectsX);
+        protected void AdditionalSettings<PersistentX, BusinessObjectX>(IMappingExpression<BusinessObjectX, PersistentX> map, object objeto, UnitOfWork unit)
+        {
+            Type persistent = typeof(PersistentX);
+            Type business = typeof(BusinessObjectX);
 
-             foreach (PropertyInfo prop in persistent.GetProperties())
-             {
-                 var propertyBusiness = business.GetType().GetProperty(prop.Name);
-                 if (propertyBusiness != null)
-                 {
-                     var typePropertyBusiness = propertyBusiness.GetType().Name;
-                     if (typePropertyBusiness != prop.GetType().Name)
-                     {
-                         throw new Exception(string.Format(TransformerMessages.TrasnformationError, typePropertyBusiness, persistent.Name));
-                     }
-                 }
-             }
-         }
+            foreach (PropertyInfo prop in persistent.GetProperties())
+            {
+                var propertyBusiness = business.GetType().GetProperty(prop.Name);
+                if (propertyBusiness != null)
+                {
+                    var typePropertyBusiness = propertyBusiness.GetType().Name;
+                    if (typePropertyBusiness != prop.GetType().Name)
+                    {
+                        throw new Exception(string.Format(TransformerMessages.TrasnformationError, typePropertyBusiness, persistent.Name));
+                    }
+                }
+            }
+        }
         #endregion
         #endregion
 
@@ -162,7 +162,7 @@ namespace Bitcoin.Business.Engine.Transformer.Mapper
             {
                 return false;
             }
-        }       
+        }
         #endregion
     }
 }

@@ -31,9 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,19 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Betting\A-D\Betting.cs" />
+    <Compile Include="Betting\A-D\Bets.cs" />
     <Compile Include="Betting\A-D\BettorUsers.cs" />
+    <Compile Include="Betting\A-D\DefinitionPhaseBets.cs" />
     <Compile Include="Betting\E-H\Games.cs" />
     <Compile Include="Betting\E-H\GeneratorUsers.cs" />
-    <Compile Include="Betting\P-S\Pullet.cs" />
+    <Compile Include="Betting\M-O\MarkerBets.cs" />
+    <Compile Include="Betting\P-S\Phases.cs" />
+    <Compile Include="Betting\P-S\Pullets.cs" />
+    <Compile Include="Betting\P-S\Sports.cs" />
+    <Compile Include="Betting\T-W\Teams.cs" />
+    <Compile Include="Betting\T-W\Tournaments.cs" />
     <Compile Include="Betting\T-W\Users.cs" />
     <Compile Include="NonPersistent\NonPersistentEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Betting\I-L\" />
-    <Folder Include="Betting\M-O\" />
     <Folder Include="Betting\X-Z\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Betting\BetsClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

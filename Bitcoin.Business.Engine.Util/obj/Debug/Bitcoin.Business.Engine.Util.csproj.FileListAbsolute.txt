@@ -5,3 +5,11 @@ E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj
 E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.csproj.GenerateResource.Cache
 E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.dll
 E:\Proyectos\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.pdb
+D:\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\bin\Debug\Bitcoin.Business.Engine.Util.dll
+D:\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\bin\Debug\Bitcoin.Business.Engine.Util.pdb
+D:\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.csprojResolveAssemblyReference.cache
+D:\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.BusinessMessages.BettingMessages.resources
+D:\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.TransformerMessages.TransformerMessages.resources
+D:\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.csproj.GenerateResource.Cache
+D:\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.dll
+D:\Desarrollo\Bitcoin.Business.Engine\Bitcoin.Business.Engine.Util\obj\Debug\Bitcoin.Business.Engine.Util.pdb

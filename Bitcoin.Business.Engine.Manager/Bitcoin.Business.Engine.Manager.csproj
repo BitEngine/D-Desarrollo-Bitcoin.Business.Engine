@@ -40,12 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Betting\Tournament\TournamentManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Betting\Bet\" />
-    <Folder Include="Betting\Tournament\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bitcoin.Business.Engine.BO\Bitcoin.Business.Engine.BO.csproj">
+      <Project>{8F03E4A1-BF04-41FE-88DA-D2FEF72A5E3C}</Project>
+      <Name>Bitcoin.Business.Engine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bitcoin.Business.Engine.DataManager\Bitcoin.Business.Engine.DataManager.csproj">
+      <Project>{62E3ACD6-A50A-4D37-A257-53CF5875884F}</Project>
+      <Name>Bitcoin.Business.Engine.DataManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

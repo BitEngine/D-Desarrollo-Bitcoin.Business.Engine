@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.T_W.Users">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAIACBAAAAgQAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Betting\T-W\Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.A_D.BettorUsers">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Betting\A-D\BettorUsers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.E_H.GeneratorUsers">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Betting\E-H\GeneratorUsers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListPullets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.P_S.Pullets">
+    <Position X="12.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAABAAIAAQAAAAAAAAAAAAAAAAAAAAAIAAAQ=</HashCode>
+      <FileName>Betting\P-S\Pullets.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tournament" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListBets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.A_D.Bets">
+    <Position X="4" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAIAAAAAAQAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Betting\A-D\Bets.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListBettorUsers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.T_W.Tournaments">
+    <Position X="14.25" Y="12.25" Width="1.5" />
+    <Members>
+      <Property Name="Sport" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAIAAAAAAAAQAAAAEAIAAAACAAAAAAAA=</HashCode>
+      <FileName>Betting\T-W\Tournaments.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sport" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListPhases" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.P_S.Phases">
+    <Position X="14.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAIAAAAAAAAQAAAAEAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Betting\P-S\Phases.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.P_S.Sports">
+    <Position X="16.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAEQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Betting\P-S\Sports.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListTournaments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.M_O.MarkerBets">
+    <Position X="1.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAgAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Betting\M-O\MarkerBets.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Game" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.A_D.DefinitionPhaseBets">
+    <Position X="6.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAIAAAAAAAAAAAAAAAAAAAEAAAABAA=</HashCode>
+      <FileName>Betting\A-D\DefinitionPhaseBets.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListTeams" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.T_W.Teams">
+    <Position X="10.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAIAAAAAAAAQAAAAEBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Betting\T-W\Teams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.E_H.Games">
+    <Position X="10.25" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAACEABAAhAA=</HashCode>
+      <FileName>Betting\E-H\Games.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Phase" />
+      <Property Name="TeamOne" />
+      <Property Name="TeamTwo" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

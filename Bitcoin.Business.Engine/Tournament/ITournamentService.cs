@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using Bitcoin.Business.Engine.BO.Transversal;
+using Bitcoin.Business.Engine.BO.Betting;
 
 namespace Bitcoin.Business.Engine.Tournament
 {
@@ -12,6 +14,9 @@ namespace Bitcoin.Business.Engine.Tournament
     public interface ITournamentService
     {
         [OperationContract]
-        void DoWork();
+        List<SportsBO> GetSports();
+
+        [OperationContract]
+        void CreateSports(List<SportsBO> sportsList);
     }
 }

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <connectionStrings>
+    <add name="EngineConnectionString" connectionString="Data Source=biz-luism;Initial Catalog=BitcoinBusinessEngine;User ID=sa; Password=123abc***" providerName="System.Data.SqlClient" />
+    <!--<add name="EngineConnectionString" connectionString="XpoProvider=MySql;server=localHost;user id=root; password=123abc***; database=BitcoinBusinessEngine;persist security info=true;CharSet=utf8;" />-->
+    <!--Auditoria-->
+    <add name="AuditConnectionString" connectionString="Data Source=biz-luism;Initial Catalog=BitcoinBusinessEngineAudit;User ID=sa;Password=123abc***" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <appSettings>
+    <add key="Audit" value="true"/>
+  </appSettings>
+  
+  <system.web>
+    <compilation debug="true" targetFramework="4.0" />
+    <httpRuntime />
+
+    <httpModules>
+      <add name="ASPxHttpHandlerModule" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    </httpModules>
+  </system.web>
+
+  <system.serviceModel>
+    <serviceHostingEnvironment multipleSiteBindingsEnabled="true" />
+
+    <bindings>
+      <wsHttpBinding>
+        <binding name="Bets" maxReceivedMessageSize="50000000" messageEncoding="Mtom" maxBufferPoolSize="50000000">
+          <readerQuotas maxDepth="500000000" maxArrayLength="500000000" maxBytesPerRead="500000000" maxNameTableCharCount="500000000" maxStringContentLength="500000000" />
+          <security mode="None" />
+        </binding>
+      </wsHttpBinding>
+    </bindings>
+
+    <services>
+      <service behaviorConfiguration="Bitcoin.Business.Engine.Bet.BetServiceBehavior" name="Bitcoin.Business.Engine.Bet.BetService">
+        <endpoint address="" binding="wsHttpBinding" bindingConfiguration="Bets" contract="Bitcoin.Business.Engine.Bet.IBetService" />
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:23217/Bet/BetService.svc" />
+          </baseAddresses>
+        </host>
+      </service>
+
+      <service behaviorConfiguration="Bitcoin.Business.Engine.Tournament.TournamentServiceBehavior" name="Bitcoin.Business.Engine.Tournament.TournamentService">
+        <endpoint address="" binding="wsHttpBinding" bindingConfiguration="Bets" contract="Bitcoin.Business.Engine.Tournament.ITournamentService" />
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:23217/Bet/BetService.svc" />
+          </baseAddresses>
+        </host>
+      </service>
+    </services>
+
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="Bitcoin.Business.Engine.Bet.BetServiceBehavior">
+          <serviceMetadata httpGetEnabled="true" />
+          <serviceDebug includeExceptionDetailInFaults="true" />
+        </behavior>
+
+        <behavior name="Bitcoin.Business.Engine.Tournament.TournamentServiceBehavior">
+          <serviceMetadata httpGetEnabled="true" />
+          <serviceDebug includeExceptionDetailInFaults="true" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules runAllManagedModulesForAllRequests="true">
+      <add name="ASPxHttpHandlerModule" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    </modules>
+    <!--
+        Para examinar el directorio raíz de la aplicación web durante la depuración, establezca el valor siguiente en true.
+        Establézcalo en false antes de la implementación para evitar revelar información sobre la carpeta de aplicación web.
+      -->
+    <directoryBrowse enabled="true" />
+  </system.webServer>
+</configuration>

@@ -6,7 +6,12 @@ using DevExpress.Xpo;
 
 namespace Bitcoin.Business.Engine.PersistentObjects.NonPersistent
 {
-    class NonPersistentEntity : XPCustomObject
+    /// <summary>
+    /// Clase que representa el elemento 
+    /// comun en las demas clases persistentes
+    /// </summary>
+    [NonPersistent]
+    public class NonPersistentEntity : XPCustomObject
     {
         private Int64 fId;
         [Key(true)]

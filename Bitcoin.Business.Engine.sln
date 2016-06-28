@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine", "Bitcoin.Business.Engine\Bitcoin.Business.Engine.csproj", "{938C151F-662E-466E-8E17-2580CED6987D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.Manager", "Bitcoin.Business.Engine.Manager\Bitcoin.Business.Engine.Manager.csproj", "{8EDADB86-034E-4A52-8391-4A3108DF8C53}"
@@ -14,6 +16,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.PersistentObjects", "Bitcoin.Business.Engine.PersistentObjects\Bitcoin.Business.Engine.PersistentObjects.csproj", "{7812EDD4-8260-4C4F-A85C-160E4C08BD5F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin.Business.Engine.Util", "Bitcoin.Business.Engine.Util\Bitcoin.Business.Engine.Util.csproj", "{4079B295-0688-458A-BF79-8A627F9D0D12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.DataAccessLayer", "Business.DataAccessLayer\Business.DataAccessLayer.csproj", "{2C9BF148-9705-4DE9-B3D2-CE2A667F591A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.TransformerLayer", "Business.TransformerLayer\Business.TransformerLayer.csproj", "{7AB77CAA-24C1-4364-8234-9447D1BA929E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.CallAudit", "Business.CallAudit\Business.CallAudit.csproj", "{2743800A-2818-40C0-B419-7D34811073EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +57,18 @@ Global
 		{4079B295-0688-458A-BF79-8A627F9D0D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4079B295-0688-458A-BF79-8A627F9D0D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4079B295-0688-458A-BF79-8A627F9D0D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C9BF148-9705-4DE9-B3D2-CE2A667F591A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C9BF148-9705-4DE9-B3D2-CE2A667F591A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C9BF148-9705-4DE9-B3D2-CE2A667F591A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C9BF148-9705-4DE9-B3D2-CE2A667F591A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB77CAA-24C1-4364-8234-9447D1BA929E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB77CAA-24C1-4364-8234-9447D1BA929E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB77CAA-24C1-4364-8234-9447D1BA929E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB77CAA-24C1-4364-8234-9447D1BA929E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2743800A-2818-40C0-B419-7D34811073EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2743800A-2818-40C0-B419-7D34811073EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2743800A-2818-40C0-B419-7D34811073EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2743800A-2818-40C0-B419-7D34811073EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

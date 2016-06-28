@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53298E05-E344-4F54-A8B8-7A96B0221EE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bitcoin.Business.Engine.Transformer</RootNamespace>
+    <AssemblyName>Bitcoin.Business.Engine.Transformer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\Extract\Finandina.Servidor.Tasas\Finandina.Servidor.Tasas.Transformador\bin\Debug\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\..\Extract\Finandina.Servidor.Tasas\Finandina.Servidor.Tasas.Transformador\bin\Debug\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Betting\BetsTransformer.cs" />
+    <Compile Include="Betting\SportsTransformer.cs" />
+    <Compile Include="Betting\TournamentsTransformer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Factory\TransformerFactory.cs" />
+    <Compile Include="Transversal\LiteTransformer.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Bitcoin.Business.Engine.BO\Bitcoin.Business.Engine.BO.csproj">
+      <Project>{8F03E4A1-BF04-41FE-88DA-D2FEF72A5E3C}</Project>
+      <Name>Bitcoin.Business.Engine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bitcoin.Business.Engine.PersistentObjects\Bitcoin.Business.Engine.PersistentObjects.csproj">
+      <Project>{7812EDD4-8260-4C4F-A85C-160E4C08BD5F}</Project>
+      <Name>Bitcoin.Business.Engine.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bitcoin.Business.Engine.Util\Bitcoin.Business.Engine.Util.csproj">
+      <Project>{4079B295-0688-458A-BF79-8A627F9D0D12}</Project>
+      <Name>Bitcoin.Business.Engine.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.TransformerLayer\Business.TransformerLayer.csproj">
+      <Project>{7AB77CAA-24C1-4364-8234-9447D1BA929E}</Project>
+      <Name>Business.TransformerLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
