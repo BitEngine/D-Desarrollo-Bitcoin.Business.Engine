@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using Bitcoin.Business.Engine.PersistentObjects.NonPersistent;
 using DevExpress.Xpo;
+using Bitcoin.Business.Engine.PersistentObjects.Betting.A_D;
+using Bitcoin.Business.Engine.PersistentObjects.Betting.P_S;
 
 namespace Bitcoin.Business.Engine.PersistentObjects.Betting.T_W
 {
@@ -33,7 +35,18 @@ namespace Bitcoin.Business.Engine.PersistentObjects.Betting.T_W
             get { return birthdate; }
             set { SetPropertyValue<DateTime>("Birthdate", ref birthdate, value); }
         }
-       
+
+        [Association("Users-Bets", typeof(Bets))]
+        public XPCollection<Bets> ListBets
+        {
+            get { return GetCollection<Bets>("ListBets"); }
+        }
+
+        [Association("Users-Pullets")]
+        public XPCollection<Pullets> ListPullets
+        {
+            get { return GetCollection<Pullets>("ListTeams"); }
+        }
 
         public Users(Session session) : base(session) { }       
         public override void AfterConstruction() { base.AfterConstruction(); }
