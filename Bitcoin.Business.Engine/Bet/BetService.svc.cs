@@ -15,5 +15,8 @@ namespace Bitcoin.Business.Engine.Bet
             //I WAS HERE :p
             //ME
         }
+
+        ///Este es mi cambio   
+        ///
     }
 }
