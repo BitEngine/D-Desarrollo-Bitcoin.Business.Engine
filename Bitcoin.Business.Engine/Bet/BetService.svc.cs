@@ -12,6 +12,7 @@ namespace Bitcoin.Business.Engine.Bet
     {
         public void DoWork()
         {
+            //I WAS HERE :p
         }
     }
 }
