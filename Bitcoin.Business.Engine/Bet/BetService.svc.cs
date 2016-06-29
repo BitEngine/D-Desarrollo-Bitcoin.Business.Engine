@@ -17,6 +17,6 @@ namespace Bitcoin.Business.Engine.Bet
         }
 
         ///Este es mi cambio   
-        /// hola ofita hermosa
+        /// hola ofita hermosa 
     }
 }
