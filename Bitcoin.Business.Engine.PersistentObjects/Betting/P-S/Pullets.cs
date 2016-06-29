@@ -20,12 +20,12 @@ namespace Bitcoin.Business.Engine.PersistentObjects.Betting.P_S
         /// <summary>
         /// Identifica el usuario que realiza la "Polla"      
         /// </summary>
-        private GeneratorUsers generatorUser;
-        [Association("GeneratorUsers-Pullets")]
-        public GeneratorUsers GeneratorUser
+        private Users generatorUser;
+        [Association("Users-Pullets")]
+        public Users GeneratorUser
         {
             get { return generatorUser; }
-            set { SetPropertyValue<GeneratorUsers>("GeneratorUser", ref generatorUser, value); }
+            set { SetPropertyValue<Users>("GeneratorUser", ref generatorUser, value); }
         }
 
         /// <summary>

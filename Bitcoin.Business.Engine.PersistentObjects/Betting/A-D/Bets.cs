@@ -25,17 +25,15 @@ namespace Bitcoin.Business.Engine.PersistentObjects.Betting.A_D
         {
             get { return pullet; }
             set { SetPropertyValue<Pullets>("Pullet", ref pullet, value); }
-        }
-
-       
+        }       
 
         /// <summary>
         /// Lista de los usuarios que realizan las apuestas
         /// </summary>
-        [Association("BettorUsers-Bets", typeof(BettorUsers))]
-        public XPCollection<BettorUsers> ListBettorUsers
+        [Association("Users-Bets", typeof(Users))]
+        public XPCollection<Users> ListBettorUsers
         {
-            get { return GetCollection<BettorUsers>("ListBettorUsers"); }
+            get { return GetCollection<Users>("ListBettorUsers"); }
         }
 
 

@@ -3,26 +3,9 @@
   <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.T_W.Users">
     <Position X="2.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAIACBAAAAgQAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAgAAAAAAAAIACBBAAAgQAAAAAAAAAAAAAAAAAAIQ=</HashCode>
       <FileName>Betting\T-W\Users.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.A_D.BettorUsers">
-    <Position X="0.75" Y="4.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
-      <FileName>Betting\A-D\BettorUsers.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.E_H.GeneratorUsers">
-    <Position X="5.25" Y="4.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Betting\E-H\GeneratorUsers.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="ListPullets" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Bitcoin.Business.Engine.PersistentObjects.Betting.P_S.Pullets">
     <Position X="12.25" Y="8.75" Width="1.5" />

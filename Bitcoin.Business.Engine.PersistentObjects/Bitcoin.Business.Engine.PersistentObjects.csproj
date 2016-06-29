@@ -44,10 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Betting\A-D\Bets.cs" />
-    <Compile Include="Betting\A-D\BettorUsers.cs" />
     <Compile Include="Betting\A-D\DefinitionPhaseBets.cs" />
     <Compile Include="Betting\E-H\Games.cs" />
-    <Compile Include="Betting\E-H\GeneratorUsers.cs" />
     <Compile Include="Betting\M-O\MarkerBets.cs" />
     <Compile Include="Betting\P-S\Phases.cs" />
     <Compile Include="Betting\P-S\Pullets.cs" />
